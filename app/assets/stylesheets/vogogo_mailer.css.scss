@@ -1,0 +1,65 @@
+$primary-color: #00bbe2;
+$secondary-color: #a0cd52;
+$gray-color: #808285;
+
+#mailer-content {
+  margin-top: 35px;
+  box-shadow: 0 0 5px 5px $gray-color;
+  border-radius: 10px;
+
+  .logo {
+    margin-top: 24px;
+    text-align: center;
+  }
+
+  h1 {
+    font-color: $primary-color;
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 35px;
+    text-align: center;
+  }
+
+  h3 {
+    font-size: 22px;
+    margin-bottom: 12px;
+    text-align: center;
+  }
+  p {
+    color: $gray-color;
+    font-size: 16px;
+    margin-bottom: 12px;
+    text-align: center;
+
+    &.small {
+      font-size: 11px;
+      margin-bottom: 5px;
+    }
+  }
+
+  .box {
+    padding: 20px;
+  }
+
+  .bg-light-blue {
+    background: $primary-color;
+  }
+
+  .bg-green {
+    background: $secondary-color;
+  }
+
+  .text-blue {
+    color: $primary-color;
+  }
+  .text-green {
+    color: $secondary-color;
+  }
+
+  .btn-action {
+    width: 288px;
+    padding: 16px 0;
+    font-size: 16px;
+    text-align: center;
+  }
+}
