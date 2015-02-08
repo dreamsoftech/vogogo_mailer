@@ -2,46 +2,90 @@ $primary-color: #00bbe2;
 $secondary-color: #a0cd52;
 $gray-color: #808285;
 
-#mailer-content {
-  margin-top: 35px;
-  box-shadow: 0 0 5px 5px $gray-color;
-  border-radius: 10px;
+body {
+  background: #f5f6f6;
+}
+#mailer_content {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  margin: 0 auto;
+  float: none;
+  margin-top: 50px;
+  margin-bottom: 150px;
+  width: 580px;
 
-  .logo {
-    margin-top: 24px;
-    text-align: center;
+  .content {
+    background: white;
+    border: 1px solid #eee;
+    border-radius: 10px;
+
+    .logo {
+      margin-top: 24px;
+      text-align: center;
+      display: block;
+    }
   }
 
   h1 {
-    font-color: $primary-color;
-    font-size: 30px;
+    font-size: 38px;
     margin-top: 20px;
-    margin-bottom: 35px;
+    margin-bottom: 20px;
     text-align: center;
+    font-weight: normal;
   }
 
   h3 {
-    font-size: 22px;
+    font-size: 20px;
+    margin-top: 0;
     margin-bottom: 12px;
+    text-align: center;
+    line-height: 32px;
+    font-weight: normal;
+  }
+
+  h4 {
+    color: $gray-color;
+    font-size: 17px;
+    margin-bottom: 12px;
+    text-align: center;
+    line-height: 24px;
+    font-weight: normal;
+  }
+
+  p {
+    font-size: 10px;
+    margin: 15px 0;
+  }
+
+  .text-center {
     text-align: center;
   }
-  p {
-    color: $gray-color;
-    font-size: 16px;
-    margin-bottom: 12px;
-    text-align: center;
+  .text-right {
+    text-align: right;
+  }
 
-    &.small {
-      font-size: 11px;
-      margin-bottom: 5px;
-    }
+  .pull-left {
+    float: left;
+  }
+
+  .pull-right {
+    float: right;
+  }
+
+  .strong {
+    font-weight: bold;
+  }
+
+  .thin {
+    font-weight: 300;
   }
 
   .box {
     padding: 20px;
+    color: white;
   }
 
-  .bg-light-blue {
+  .bg-blue {
     background: $primary-color;
   }
 
@@ -55,11 +99,26 @@ $gray-color: #808285;
   .text-green {
     color: $secondary-color;
   }
+  .text-gray {
+    color: $gray-color;
+  }
 
   .btn-action {
     width: 288px;
     padding: 16px 0;
-    font-size: 16px;
-    text-align: center;
+    font-size: 18px;
+    background: white;
+    display: inline-block;
+  }
+  a {
+    text-decoration: none;
+    cursor: default;
+  }
+
+  .footer {
+    margin-top: 15px;
+    p {
+      margin: 0;
+    }
   }
 }
