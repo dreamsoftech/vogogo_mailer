@@ -17,9 +17,14 @@ class VogogoMailer < ActionMailer::Base
     mail(to: email, subject: 'You changed your password')
   end
 
-  def payment_notification(email)
+  def increase_limits(email)
     @email = email
-    mail(to: email, subject: 'Payment Notification')
+    mail(to: email, subject: 'Increase Limits')
+  end
+
+  def verify_micro_deposit(email)
+    @email = email
+    mail(to: email, subject: 'Verify Micro Deposit')
   end
 
 end
