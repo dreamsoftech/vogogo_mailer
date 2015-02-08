@@ -6,4 +6,9 @@ class VogogoMailer < ActionMailer::Base
     @email = email
     mail(to: email, subject: 'Reset Password')
   end
+
+  def confirm_email(email)
+    @email = email
+    mail(to: email, subject: 'Confirm your email')
+  end
 end
