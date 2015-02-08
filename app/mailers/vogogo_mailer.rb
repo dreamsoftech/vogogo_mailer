@@ -11,4 +11,9 @@ class VogogoMailer < ActionMailer::Base
     @email = email
     mail(to: email, subject: 'Confirm your email')
   end
+
+  def changed_password(email)
+    @email = email
+    mail(to: email, subject: 'You changed your password')
+  end
 end
