@@ -3,6 +3,7 @@
 $primary-color: #00bbe2;
 $secondary-color: #a0cd52;
 $gray-color: #808285;
+$gray-dark-color: #6d6e71;
 
 body {
   background: #f5f6f6;
@@ -115,7 +116,7 @@ body {
     color: $gray-color;
   }
   .text-gray-darker {
-    color: #6d6e71;
+    color: $gray-dark-color;
   }
   .text-white {
     color: white;
