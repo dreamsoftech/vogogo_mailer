@@ -6,7 +6,7 @@ $gray-color: #808285;
 $gray-dark-color: #6d6e71;
 
 body {
-  background: #f5f6f6;
+  background-color: #f5f6f6;
   padding-top: 10px;
 }
 #mailer_content {
@@ -19,7 +19,7 @@ body {
   width: 580px;
 
   .content {
-    background: white;
+    background-color: white;
     border: 1px solid #eee;
     border-radius: 10px;
 
@@ -94,16 +94,16 @@ body {
     width: 288px;
     padding: 16px 0;
     font-size: 18px;
-    background: white;
+    background-color: white;
     display: inline-block;
   }
 
   .bg-blue {
-    background: $primary-color;
+    background-color: $primary-color;
   }
 
   .bg-green {
-    background: $secondary-color;
+    background-color: $secondary-color;
   }
 
   .text-blue {
