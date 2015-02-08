@@ -27,4 +27,8 @@ class VogogoMailer < ActionMailer::Base
     mail(to: email, subject: 'Verify Micro Deposit')
   end
 
+  def reactivate(email)
+    @email = email
+    mail(to: email, subject: 'Reactivate your account')
+  end
 end

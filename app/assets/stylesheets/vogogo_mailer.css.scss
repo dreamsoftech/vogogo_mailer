@@ -89,6 +89,14 @@ body {
     color: white;
   }
 
+  .btn-action {
+    width: 288px;
+    padding: 16px 0;
+    font-size: 18px;
+    background: white;
+    display: inline-block;
+  }
+
   .bg-blue {
     background: $primary-color;
   }
@@ -106,13 +114,11 @@ body {
   .text-gray {
     color: $gray-color;
   }
-
-  .btn-action {
-    width: 288px;
-    padding: 16px 0;
-    font-size: 18px;
-    background: white;
-    display: inline-block;
+  .text-gray-darker {
+    color: #6d6e71;
+  }
+  .text-white {
+    color: white;
   }
   a {
     text-decoration: none;
