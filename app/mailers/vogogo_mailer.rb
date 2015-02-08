@@ -16,4 +16,10 @@ class VogogoMailer < ActionMailer::Base
     @email = email
     mail(to: email, subject: 'You changed your password')
   end
+
+  def payment_notification(email)
+    @email = email
+    mail(to: email, subject: 'Payment Notification')
+  end
+
 end
