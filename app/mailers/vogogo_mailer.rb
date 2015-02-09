@@ -2,33 +2,39 @@ class VogogoMailer < ActionMailer::Base
   default from: "from@example.com"
   layout 'mailer'
 
+
   def reset_password(email)
     @email = email
-    mail(to: email, subject: 'Reset Password')
-  end
-
-  def confirm_email(email)
-    @email = email
-    mail(to: email, subject: 'Confirm your email')
+    mail(to: email, subject: 'Reset your Vogogo Password')
   end
 
   def changed_password(email)
     @email = email
-    mail(to: email, subject: 'You changed your password')
+    mail(to: email, subject: 'Vogogo Password changed')
   end
 
-  def increase_limits(email)
+  def verify_vogogo_banking_account(email)
     @email = email
-    mail(to: email, subject: 'Increase Limits')
+    mail(to: email, subject: 'Verify your Vogogo Banking')
   end
 
-  def verify_micro_deposit(email)
+  def reminder_verify_vogogo_banking_account(email)
     @email = email
-    mail(to: email, subject: 'Verify Micro Deposit')
+    mail(to: email, subject: 'Reminder to Verify your Vogogo Banking')
+  end
+
+  def vogogo_notification1(email)
+    @email = email
+    mail(to: email, subject: 'Important Vogogo Notification')
+  end
+
+  def vogogo_notification2(email)
+    @email = email
+    mail(to: email, subject: 'Important Vogogo Notification')
   end
 
   def reactivate(email)
     @email = email
-    mail(to: email, subject: 'Reactivate your account')
+    mail(to: email, subject: 'Come back to Vogogo and get 3 FREE instant deposits with zero fees')
   end
 end
