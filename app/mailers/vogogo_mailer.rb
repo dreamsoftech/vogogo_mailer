@@ -1,5 +1,5 @@
 class VogogoMailer < ActionMailer::Base
-  default from: "from@example.com"
+  default from: "\"Vogogo\" <info@vogogo.com>"
   layout 'mailer'
 
 
